@@ -12,7 +12,7 @@
         </div>
         <div class="rightMain">
             <transition name="fade" mode="out-in">
-                <!-- v-if判断可以清空数据，下次进入时重新触发created事件 -->
+                <!-- v-if判断可以清空数据，下次进入时重新触发created事件。 -->
                 <add-exam v-if="nowPath == '添加考试'" />
                 <photos v-if="nowPath == 'photo'" />
             </transition>
