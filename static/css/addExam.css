@@ -1,0 +1,360 @@
+#addExam .viewFade-enter-active, .viewFade-leave-active {
+    transition: opacity .5s;
+    overflow: hidden;
+}
+#addExam .viewFade-enter, .viewFade-leave-to{
+    opacity: 0;
+}
+#addExam .viewContainer{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+#addExam .viewContainer .addSubject .subjectTitle{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#addExam .viewContainer .addSubject .subjectTitle .titleName{
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+    margin-left: 20px;
+}
+#addExam .viewContainer .addSubject .subjectTitle .addSubjectType{
+    width: 110px;
+    height: 40px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+    margin-right: 20px;
+}
+#addExam .viewContainer .addSubject .subjectTitle .addSubjectType:active{
+    background: rgb(245, 245, 245);
+}
+#addExam .viewContainer .addSubject .subjectContainer{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow-x: hidden;
+}
+#addExam .viewContainer .addSubject .subjectContainer::-webkit-scrollbar{
+    width: 6px;
+    background-color: #F5F5F5;
+    position: absolute;
+    right: 0;
+}
+#addExam .viewContainer .addSubject .subjectContainer::-webkit-scrollbar-thumb{
+    background-color: #555;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject{
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 2s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .closeShow{
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -1200px;
+    opacity: 0;
+    transition: all 2s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .closeCreat{
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 1200px;
+    opacity: 0;
+    transition: all 2s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject{
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 2s;
+    display: flex;
+    flex-flow: row;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi{
+    width: 280px;
+    height: 180px;
+    border: 1px solid #d7dae2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    margin: 0 10px 20px; 
+    transition: all 0.5s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+    transition: all 0.5s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi .title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    box-sizing: border-box;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi .title .titleName{
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+    line-height: 49px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi .content{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-flow: column;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi .content .subCount{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(120, 120, 120);
+    display: inline-block;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectUl .subjectLi .content .seeSubject{
+    margin: 30px auto 0;
+}
+/* 创建试题 */
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm{
+    width: 680px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName{
+    width: 680px;
+    height: 60px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .name{
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+    line-height: 60px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .creatInp{
+    width: 500px;
+    height: 40px;
+    margin-left: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .creatInp .el-input__inner{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    font-size: 18px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .subType{
+    width: 500px;
+    height: 40px;
+    margin-left: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .subType .el-input__inner{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    font-size: 18px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .creatCascader{
+    width: 500px;
+    height: 40px;
+    margin-left: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .subName .creatCascader .el-input__inner{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    font-size: 18px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer{
+    width: 680px;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .name{
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+    line-height: 60px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    margin-left: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi .zeroValue{
+    width: 400px;
+    height: 40px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi .zeroValue .el-input__inner{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    font-size: 18px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi .addAnswer{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d7dae2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    transition: all .5s;
+    position: absolute;
+    right: -30px;
+    top: 0;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi .addAnswer:hover{
+    color: #409EFF;
+    border-color: #409EFF;
+    transition: all .5s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi .delAnswer{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d7dae2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    transition: all .5s;
+    position: absolute;
+    right: -80px;
+    top: 0;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .zeroUl .zeroLi .delAnswer:hover{
+    color: #F56C6C;
+    border-color: #F56C6C;
+    transition: all .5s;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .zeroAnswer .textareas{
+    width: 500px;
+    margin-left: 20px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .creatForm .addBtn{
+    margin: 30px auto 0;
+}
+/* 展示窗口 */
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .showWindow{
+    width: 400px;
+    margin-left: 20px;
+    border: 1px solid #d7dae2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+#addExam .viewContainer .addSubject .subjectContainer .creatSubject .showWindow .subjectContainer{
+    display: flex;
+    flex-flow: column;
+    width: 360px;
+    border: 1px solid
+}
+/* #addExam .viewContainer .addSubject .subjectContainer .creatSubject .showWindow .subjectContainer .title{
+    width: 100%;
+    height: 
+} */
+
+#addExam .viewContainer .manageType{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+#addExam .viewContainer .manageType .addSubjectTypeBtn{
+    position: absolute;
+    top: 4px;
+    right: 0;
+    z-index: 20;
+}
+#addExam .viewContainer .manageType .subjectTypeForm{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .watchContainer{
+    width: 100%;
+    height: auto;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectWatchFade-enter-active, .subjectWatchFade-leave-active {
+    transition: opacity .5s;
+    overflow: hidden;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .subjectWatchFade-enter, .subjectWatchFade-leave-to{
+    opacity: 0;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .watchContainer .isData{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .watchContainer .isData .el-form{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .watchContainer .isData .answerShow0{
+    display: flex;
+    flex-flow: column;
+}
+#addExam .viewContainer .addSubject .subjectContainer .showAllSubject .watchContainer .isData .toolBtn{
+    position: absolute ;
+    right: 100px;
+    top: 0;
+}

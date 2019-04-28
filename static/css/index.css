@@ -1,0 +1,106 @@
+#index{
+    display: flex;
+    flex-flow: row;
+    min-height: 800px;
+}
+#index .leftMain{
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 4px 0 4px rgba(200, 200, 200, 0.4);
+    display: flex;
+    flex-flow: column;
+    min-height: 800px;
+    z-index: 100;
+    background: white;
+}
+#index .leftMain .logo{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+#index .leftMain .logo .seiaoi{
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    position: absolute ;
+    left: 50px;
+    top: 60px;
+}
+#index .leftMain .logo .satsuki{
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    position: absolute;
+    left: 65px;
+    top: 100px;
+}
+#index .leftMain .logo .amp{
+    color: rgb(50, 50, 50);
+    position: absolute;
+    left: 140px;
+    top: 80px;
+    font-size: 24px;
+}
+#index .leftMain .chooseTitle{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+#index .leftMain .chooseTitle .chooseItem{
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    margin: 20px 0;
+    cursor: pointer;
+    position: relative;
+}
+#index .leftMain .chooseTitle .chooseItem::after{
+    content: '' ;
+    position: absolute;
+    width: 0%;
+    left: 0;
+    height: 6px;
+    bottom: -4px;
+    transition: all 1s;
+}
+#index .leftMain .chooseTitle .chooseItem:nth-child(2n-1):hover::after{
+    content: '' ;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 6px;
+    bottom: -4px;
+    background: #409EFF;
+    transition: all 1s;
+}
+#index .leftMain .chooseTitle .chooseItem:nth-child(2n):hover::after{
+    content: '' ;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 6px;
+    bottom: -4px;
+    background: #FFCCCC;
+    transition: all 1s;
+}
+
+#index .rightMain{
+    width: 100%;
+    margin-left: 260px;
+    position: relative;
+}
+
+#index .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+    overflow: hidden;
+}
+#index .fade-enter, .fade-leave-to{
+    opacity: 0;
+}

@@ -1,0 +1,9 @@
+/* 首页 */
+@import 'index.css';
+/* 注册 */
+@import 'login.css';
+/* 组件 */
+@import 'components.css';
+/* 添加考试 */
+@import 'addExam.css';
+::selection{background:rgb(50, 50, 50); color:white;}
